@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Shin - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b6f90372b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="images/logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Biomedical Engineering Student</p>
+                <h1>Andrew Shin</h1>
+            </div> 
+        </div>
+    </div>
+<!-- --------about-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/XXX.png">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hi, I'm Andrew, A second year student at the University of Waterloo studying for a BASc in Biomedical Engineering. 
+                        I have experience in CAD/Mechanical Design and R&D with interests in blood diagnostics devices and prothetics! 
+                        Always working towards the goal of applying engineering to improve human health.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software</span><br> Java, C#, C++, Python, HTML, CSS, </li>
+                            <li><span>Biomedical</span><br> Microfludics, Prothesis, Immunoassay, Drug Formulations, Cell Culture</li>
+                            <li><span>Mechanical</span><br>SolidWorks, AutoCAD, Prototyping, Circuitry</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="experience">
+                        <ul>
+                            <li><span>Ongoing</span><br> TBD </li>
+                            <li><span>Fall 2023</span><br>Instrumentation Engineer <br>Cytiva - Precision NanoSystems Inc</li>
+                            <li><span>Winter 2023</span><br>R&D Microfludics Engineer <br> Vital Biosciences</li>
+                            <li><span>Summer 2022</span><br> Team Lead <br> e2 Young Engineers</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="education">
+                        <ul>
+                            <li><span>2021-Present</span><br> BASc in Biomedical Engineering - University of Waterloo</li>
+                            <li><span>2017-2021</span><br> OSSD - St. Theresa of Lisieux CHS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Interests</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>Prothetic Device</h2>
+                <p>desciption </p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>Project 2</h2>
+                <p>desciption </p>
+               
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i> 
+                <h2>Project 3</h2>
+                <p>desciption </p>
+               
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i> 
+                <h2>Project 4</h2>
+                <p>desciption </p>
+               
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- ------Portfolio------ -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>Whale Puzzle</h3>
+                    <p>Description</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>Othello</h3>
+                    <p>Description</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3></h3>
+                    <p>Prosthetic Hand</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work4.png">
+                <div class="layer">
+                    <h3></h3>
+                    <p>EMG Sensor</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work5.png">
+                <div class="layer">
+                    <h3>Gesture Detection</h3>
+                    <p>Description</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+    <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+       
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+</body>
+</html>
