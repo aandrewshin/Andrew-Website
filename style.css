@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{ 
-    background: #000;
+    background: #fff;
     color: #fff;
 }
 #header{
@@ -35,7 +35,7 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color:#fff;
+    color:#000;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -143,24 +143,34 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 .projects-list div{
-    background: #262626;
+    background: #fff;
     padding: 20px;
     font-size: 13px;
     font-weight:300;
     border-right: 10px;
     transition: background 0.5s, transform 0.5s;
     border-radius: 15px;
+    border: 2px solid #262626;
 }
 .projects-list div i{
-    color: #fff;
+    color: #262626;
     font-size: 50px;
     margin-bottom: 30px;
+    transition: color 0.5s;
+
 }
 .projects-list div h2{
-    color: #fff;
+    color: #262626;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 30px;
+    transition: color 0.5s;
+}
+.projects-list div p{
+    color: #000; /* Assuming you have a paragraph inside .projects-list div */
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: color 0.5s;
 }
 .projects-list div a{
     text-decoration: none;
@@ -168,10 +178,18 @@ nav ul li a:hover::after{
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
+    transition: color 0.5s;
 }
-.projects-list div:hover{
+.projects-list div:hover{   
     background: #861818;
     transform: translateY(-10px);
+}
+
+.projects-list div:hover i,
+.projects-list div:hover h2,
+.projects-list div:hover a ,
+.projects-list div:hover h2 p{
+    color: #fff; /* Change text color to white on hover */
 }
 /*Portfolio*/
 #portfolio{
@@ -182,6 +200,7 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    border: 2px solid #000;
 }
 .work{
     border-radius: 10px;
