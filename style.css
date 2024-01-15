@@ -315,7 +315,7 @@ transform: scale(1.1);
 }
 
 .social-icons a:hover{
-    color: #0077b5;
+    color: #5c507e;
     transform: translateY(-5px);
     transition: 0.5s;
 }
