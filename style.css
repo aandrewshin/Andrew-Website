@@ -16,7 +16,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/xxx.jpg);
+    background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
     background-size: cover;
@@ -149,6 +149,11 @@ nav ul li a:hover::after{
     grid-gap: 40px;
     margin-top: 50px;
 }
+.projects-list img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 .projects-list div{
     background: #fff;
     padding: 20px;
@@ -188,7 +193,7 @@ nav ul li a:hover::after{
     transition: color 0.5s;
 }
 .projects-list div:hover{   
-    background: #eb7777;
+    background: #6e1212;
     transform: translateY(-10px);
 }
 
@@ -207,10 +212,12 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
-    border: 2px solid #000;
+   /*border: 2px solid #000;*/
+    border-radius: 15px;
 }
 .work{
-    border-radius: 10px;
+    border-radius: 20px;
+    border: 3px solid #000;
     position: relative;
     overflow: hidden;
 }
@@ -223,7 +230,8 @@ nav ul li a:hover::after{
 .layer{
     width:100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.1), #eb7777);
+    color:#fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), #080303);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -235,11 +243,12 @@ nav ul li a:hover::after{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     transition: height 0.5s;
 }
 .layer h3{
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 .layer a{
@@ -344,7 +353,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/choosebackgroundforhenphone.png);
+        background-image: url(images/phoneback.png);
     }
     .header.text{
         margin-top: 100%;
